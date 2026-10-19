@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Jacqueline Fagundes | Médica Geriatra e Clínica em Recife - PE</title>
-  <meta name="description" content="Atendimento geriátrico humanizado, preventivo e especializado em Recife. Dra. Jacqueline Fagundes - CRM PE 34165 | RQE de Geriatria e Clínica Médica.">
+  <title>Dra. Jacqueline Fagundes | Médica Geriatra</title>
+  <meta name="description" content="Atendimento humanizado com foco em longevidade. Avaliação Geriátrica Ampla e Telemedicina Geriátrica com a Dra. Jacqueline Fagundes - Geriatra - Geriatria - Recife Pernambuco">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +18,13 @@
 
   <style>
     :root {
-      --bg-nude: #F4EBE4;
+      --bg-nude: #F7F1EC;
       --bg-card: #FAF6F2;
       --accent-brown: #7C5A43;
       --accent-brown-dark: #5C412F;
       --text-dark: #2C2420;
       --text-muted: #6E625A;
-      --border-soft: #E2D5C9;
+      --border-soft: #E5DCD4;
       --font-serif: 'Cormorant Garamond', serif;
       --font-sans: 'Plus Jakarta Sans', sans-serif;
     }
@@ -41,19 +43,19 @@
       background-color: var(--bg-nude);
       color: var(--text-dark);
       font-family: var(--font-sans);
-      line-height: 1.6;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
 
     /* Header & Navigation */
     header {
-      background-color: rgba(244, 235, 228, 0.95);
-      backdrop-filter: blur(10px);
+      background-color: rgba(247, 241, 236, 0.92);
+      backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
       z-index: 1000;
       border-bottom: 1px solid var(--border-soft);
-      padding: 18px 24px;
+      padding: 16px 24px;
     }
 
     .nav-container {
@@ -73,29 +75,36 @@
 
     .brand-name {
       font-family: var(--font-serif);
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
+      letter-spacing: 1px;
       color: var(--accent-brown);
       line-height: 1.1;
     }
 
     .brand-title {
-      font-size: 0.75rem;
-      letter-spacing: 3px;
+      font-size: 0.72rem;
+      letter-spacing: 2.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      font-size: 0.62rem;
+      letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--text-muted);
       font-weight: 500;
     }
-
+    
     .nav-btn {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       background-color: var(--accent-brown);
       color: #FFF;
-      padding: 10px 20px;
+      padding: 10px 22px;
       border-radius: 30px;
       text-decoration: none;
       font-size: 0.85rem;
@@ -111,7 +120,7 @@
 
     /* Hero Section */
     .hero {
-      padding: 80px 24px 60px;
+      padding: 90px 24px 70px;
       max-width: 1100px;
       margin: 0 auto;
       text-align: center;
@@ -119,11 +128,11 @@
 
     .badge {
       display: inline-block;
-      background-color: rgba(124, 90, 67, 0.1);
+      background-color: rgba(124, 90, 67, 0.08);
       color: var(--accent-brown);
-      padding: 6px 16px;
+      padding: 6px 18px;
       border-radius: 20px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -133,9 +142,9 @@
 
     .hero h1 {
       font-family: var(--font-serif);
-      font-size: 3.2rem;
+      font-size: 3.3rem;
       font-weight: 600;
-      line-height: 1.2;
+      line-height: 1.15;
       color: var(--text-dark);
       margin-bottom: 20px;
     }
@@ -148,7 +157,7 @@
     .hero p {
       font-size: 1.15rem;
       color: var(--text-muted);
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto 36px;
       font-weight: 400;
     }
@@ -166,7 +175,7 @@
       gap: 10px;
       background-color: var(--accent-brown);
       color: #FFF;
-      padding: 16px 32px;
+      padding: 16px 36px;
       border-radius: 40px;
       text-decoration: none;
       font-size: 1rem;
@@ -180,29 +189,10 @@
       transform: translateY(-2px);
     }
 
-    .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background-color: transparent;
-      color: var(--accent-brown);
-      border: 1.5px solid var(--accent-brown);
-      padding: 16px 32px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .btn-secondary:hover {
-      background-color: rgba(124, 90, 67, 0.05);
-    }
-
     /* About Section */
     .about {
       background-color: var(--bg-card);
-      padding: 80px 24px;
+      padding: 85px 24px;
       border-top: 1px solid var(--border-soft);
       border-bottom: 1px solid var(--border-soft);
     }
@@ -215,7 +205,7 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
-      gap: 48px;
+      gap: 50px;
       align-items: center;
     }
 
@@ -239,7 +229,7 @@
     }
 
     .credentials-box {
-      margin-top: 20px;
+      margin-top: 24px;
       padding-top: 16px;
       border-top: 2px solid var(--accent-brown);
     }
@@ -251,54 +241,60 @@
       margin-bottom: 6px;
     }
 
-    /* Pillars / Values Section */
+    /* Values / Professional Traits */
     .values-section {
-      padding: 70px 24px;
+      padding: 75px 24px;
       background-color: var(--bg-nude);
     }
 
     .values-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
       margin-top: 40px;
     }
 
     .value-card {
       background-color: var(--bg-card);
       border: 1px solid var(--border-soft);
-      padding: 24px;
-      border-radius: 12px;
+      padding: 28px 24px;
+      border-radius: 16px;
       text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(124, 90, 67, 0.06);
     }
 
     .value-card i {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       color: var(--accent-brown);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .value-card h4 {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       color: var(--text-dark);
       margin-bottom: 8px;
       font-family: var(--font-serif);
     }
 
     .value-card p {
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       color: var(--text-muted);
     }
 
     /* Services Section */
     .services {
-      padding: 80px 24px;
+      padding: 85px 24px;
       background-color: var(--bg-card);
     }
 
     .section-header {
       text-align: center;
-      max-width: 600px;
+      max-width: 650px;
       margin: 0 auto 50px;
     }
 
@@ -312,7 +308,7 @@
       background-color: var(--bg-nude);
       border: 1px solid var(--border-soft);
       border-radius: 16px;
-      padding: 32px;
+      padding: 36px 32px;
       transition: all 0.3s ease;
     }
 
@@ -323,15 +319,15 @@
     }
 
     .service-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 12px;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
       background-color: rgba(124, 90, 67, 0.1);
       color: var(--accent-brown);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       margin-bottom: 20px;
     }
 
@@ -347,10 +343,17 @@
       font-size: 0.95rem;
     }
 
+    /* Telemedicina Section */
+    .telemedicine {
+      background-color: var(--bg-nude);
+      padding: 85px 24px;
+      border-top: 1px solid var(--border-soft);
+    }
+
     /* Location & Contact Section */
     .contact-section {
-      background-color: var(--bg-nude);
-      padding: 80px 24px;
+      background-color: var(--bg-card);
+      padding: 85px 24px;
       border-top: 1px solid var(--border-soft);
     }
 
@@ -358,6 +361,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
+      align-items: stretch;
     }
 
     @media (max-width: 768px) {
@@ -368,6 +372,10 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
+      background-color: var(--bg-nude);
+      padding: 36px;
+      border-radius: 16px;
+      border: 1px solid var(--border-soft);
     }
 
     .info-item {
@@ -423,7 +431,7 @@
     footer {
       background-color: #241D1A;
       color: #D3C7BE;
-      padding: 40px 24px;
+      padding: 45px 24px;
       text-align: center;
       font-size: 0.85rem;
     }
@@ -465,26 +473,24 @@
   <header>
     <div class="nav-container">
       <a href="#" class="brand-logo">
-        <span class="brand-name">JACQUELINE FAGUNDES</span>
-        <span class="brand-title">MÉDICA GERIATRA</span>
+        <span class="brand-name">Dra. Jacqueline Fagundes</span>
+        <span class="brand-title">Médica Geriatra em Recife</span>
+        <span class="brand-subtitle">CRM-PE 34165 (RQE 17158)</span>
       </a>
-      <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Jacqueline." target="_blank" class="nav-btn">
-        <i class="fa-brands fa-whatsapp"></i> Agendar Consulta
+      <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20obter%20informações%20sobre%20as%20consultas%20(presencial%20ou%20telemedicina)." target="_blank" class="nav-btn">
+        <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
       </a>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <span class="badge">Atendimento Médico Especializado em Recife</span>
-    <h1>Cuidado integral, acolhedor e experiente para a sua <span>longevidade</span>.</h1>
-    <p>Acompanhamento geriátrico e clínico focado na preservação da autonomia, segurança terapêutica e qualidade de vida em todas as fases.</p>
+    <span class="badge">Geriatra em Recife/PE e Telemedicina</span>
+    <h1>Atendimento geriátrico especializado em <span>Recife/PE</span> e consultas online por <span>Telemedicina</span>.</h1>
+    <p>Acompanhamento geriátrico e clínico focado na preservação da autonomia, segurança terapêutica e qualidade de vida. Atendimento humanizado presencial ou virtual.</p>
     <div class="cta-group">
-      <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Jacqueline." target="_blank" class="btn-primary">
-        <i class="fa-brands fa-whatsapp"></i> Falar pelo WhatsApp
-      </a>
-      <a href="https://www.instagram.com/jacqueline.geriatria/" target="_blank" class="btn-secondary">
-        <i class="fa-brands fa-instagram"></i> Instagram
+      <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20conversar%20sobre%20o%20agendamento%20de%20uma%20consulta." target="_blank" class="btn-primary">
+        <i class="fa-brands fa-whatsapp"></i> Agendar Consulta via WhatsApp
       </a>
     </div>
   </section>
@@ -497,7 +503,7 @@
           <h2 class="section-title">Sobre a Dra. Jacqueline Fagundes</h2>
           <div class="about-text">
             <p>Formada em Medicina pela Universidade Federal de Campina Grande (UFCG), construí uma sólida base prática e acadêmica através de duas residências médicas especializadas: <b>Clínica Médica</b> e <b>Geriatria</b>.</p>
-            <p>Com anos de experiência dedicada à saúde do adulto e da pessoa idosa, meu compromisso diário é exercer a medicina com extremo rigor técnico, seriedade e justiça terapêutica. Acredito em um atendimento centrado na pessoa, pautado pela escuta atenta e por uma paciência genuína com cada paciente e seus familiares.</p>
+            <p>Com anos de experiência dedicada à saúde do adulto e da pessoa idosa, atuando como <b>Geriatra em Recife - PE</b>, meu compromisso diário é exercer a medicina com rigor técnico, seriedade e dedicação. Acredito em um atendimento centrado na pessoa, pautado pela escuta atenta e empatia genuína.</p>
             
             <div class="credentials-box">
               <p><i class="fa-solid fa-id-card" style="color: var(--accent-brown); margin-right: 8px;"></i> CRM PE 34165 | PB 11234</p>
@@ -533,11 +539,6 @@
           <p>Atenção redobrada e ritmo adequado às necessidades de cada idoso.</p>
         </div>
         <div class="value-card">
-          <i class="fa-solid fa-scale-balanced"></i>
-          <h4>Justiça Terapêutica</h4>
-          <p>Condutas equilibradas, evitando excessos e focando no que realmente traz benefício.</p>
-        </div>
-        <div class="value-card">
           <i class="fa-solid fa-graduation-cap"></i>
           <h4>Solidez Técnica</h4>
           <p>Formação robusta em Clínica Médica aliada à especialização em Geriatria.</p>
@@ -550,7 +551,7 @@
   <section class="services">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Áreas de Atuação em Geriatria</h2>
+        <h2 class="section-title">Avaliação Geriátrica Ampla e Áreas de Atuação</h2>
         <p style="color: var(--text-muted);">Acompanhamento médico completo estruturado para preservar a funcionalidade e o bem-estar.</p>
       </div>
 
@@ -576,12 +577,73 @@
     </div>
   </section>
 
-  <!-- Contact / Location -->
+  <!-- Telemedicina Section -->
+  <section class="telemedicine">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge" style="margin-bottom: 12px;">Consulta Online</span>
+        <h2 class="section-title">Telemedicina Geriátrica</h2>
+        <p style="color: var(--text-muted);">Acolhimento geriátrico e acompanhamento clínico com conforto, segurança e sigilo, disponível para pacientes que optam pelo formato virtual.</p>
+      </div>
+
+      <div class="about-grid" style="align-items: stretch;">
+        <!-- Card Explicativo -->
+        <div style="background-color: var(--bg-card); padding: 36px; border-radius: 16px; border: 1px solid var(--border-soft); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--accent-brown); margin-bottom: 16px;">Como Funciona a Consulta Online?</h3>
+            <p style="color: var(--text-muted); margin-bottom: 16px; font-size: 0.95rem;">
+              A Telemedicina Geriátrica é uma excelente alternativa para o acompanhamento contínuo de quadros estáveis, alinhamentos com familiares/cuidadores e reavaliações de receitas e exames.
+            </p>
+            <ul style="list-style: none; padding: 0; color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-lock" style="color: var(--accent-brown);"></i>
+                <span>Plataforma segura com prontuário eletrônico criptografado (LGPD).</span>
+              </li>
+              <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-file-prescription" style="color: var(--accent-brown);"></i>
+                <span>Receituários, atestados e pedidos de exames com assinatura digital válida em todo o Brasil.</span>
+              </li>
+              <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-users" style="color: var(--accent-brown);"></i>
+                <span>Possibilidade de participação simultânea de familiares ou cuidadores durante a videochamada.</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20telemedicina." target="_blank" class="btn-primary" style="text-align: center; justify-content: center;">
+            <i class="fa-brands fa-whatsapp"></i> Tirar Dúvidas sobre Teleconsulta
+          </a>
+        </div>
+
+        <!-- Indicativos de Adequação Ética e Técnica -->
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="value-card" style="text-align: left; padding: 20px; background-color: var(--bg-card);">
+            <i class="fa-solid fa-user-shield" style="font-size: 1.3rem; margin-bottom: 8px;"></i>
+            <h4 style="font-size: 1.05rem;">Segurança e Privacidade</h4>
+            <p style="font-size: 0.85rem;">Atendimento realizado em conformidade rigorosa com as diretrizes do CFM (Resolução CFM nº 2.314/2022) e proteção de dados.</p>
+          </div>
+
+          <div class="value-card" style="text-align: left; padding: 20px; background-color: var(--bg-card);">
+            <i class="fa-solid fa-house-medical" style="font-size: 1.3rem; margin-bottom: 8px;"></i>
+            <h4 style="font-size: 1.05rem;">Acompanhamento Familiar</h4>
+            <p style="font-size: 0.85rem;">Ideal para famílias com idosos que possuem restrições graves de mobilidade ou que residem em outras localidades.</p>
+          </div>
+
+          <div class="value-card" style="text-align: left; padding: 20px; background-color: var(--bg-card);">
+            <i class="fa-solid fa-notes-medical" style="font-size: 1.3rem; margin-bottom: 8px;"></i>
+            <h4 style="font-size: 1.05rem;">Triagem Responsável</h4>
+            <p style="font-size: 0.85rem;">Sempre que identificado em consulta a necessidade de exame físico presencial, o paciente será orientado a buscar atendimento físico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Location & Agendamento -->
   <section class="contact-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Local de Atendimento</h2>
-        <p style="color: var(--text-muted);">Consulte o endereço do consultório e agende seu horário com comodidade.</p>
+        <h2 class="section-title">Local de Atendimento e Canais de Contato</h2>
+        <p style="color: var(--text-muted);">Atendimento presencial em Recife ou por telemedicina. Fale com nossa equipe para definir a melhor opção para você.</p>
       </div>
 
       <div class="contact-grid">
@@ -589,7 +651,7 @@
           <div class="info-item">
             <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div class="info-text">
-              <h4>Endereço do Consultório</h4>
+              <h4>Consultório Presencial (Recife - PE)</h4>
               <p>Rua Pacífico dos Santos, 103 – Paissandu<br>Recife - PE, CEP: 52010-030</p>
               <a href="https://maps.google.com/?q=Rua+Pacífico+dos+Santos,+103+-+Paissandu,+Recife+-+PE" target="_blank" class="map-btn">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Como chegar (Google Maps)
@@ -598,27 +660,35 @@
           </div>
 
           <div class="info-item">
-            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-icon"><i class="fa-solid fa-laptop-medical"></i></div>
             <div class="info-text">
-              <h4>Telefone e WhatsApp</h4>
-              <p><a href="https://wa.me/5581996610333" target="_blank">(81) 99661-0333</a></p>
+              <h4>Consultas Virtuais (Telemedicina)</h4>
+              <p>Atendimento online disponível para acompanhamento e orientações de onde você estiver.</p>
+            </div>
+          </div>
+
+        <div class="info-item">
+            <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="info-text">
+              <h4>Instagram</h4>
+              <p><a href="https://www.instagram.com/jacqueline.geriatria/" target="_blank">@jacqueline.geriatria</a></p>
             </div>
           </div>
 
           <div class="info-item">
-            <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
             <div class="info-text">
-              <h4>Instagram Profissional</h4>
-              <p><a href="https://www.instagram.com/jacqueline.geriatria/" target="_blank">@jacqueline.geriatria</a></p>
+              <h4>WhatsApp Oficial</h4>
+              <p><a href="https://wa.me/5581996610333" target="_blank">(81) 99661-0333</a></p>
             </div>
           </div>
         </div>
 
-        <div style="background-color: var(--bg-card); padding: 32px; border-radius: 16px; border: 1px solid var(--border-soft); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-          <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--accent-brown); margin-bottom: 12px;">Dúvidas ou Agendamentos?</h3>
-          <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem;">Fale diretamente com nossa equipe via WhatsApp para verificar horários disponíveis para consultas.</p>
-          <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-primary">
-            <i class="fa-brands fa-whatsapp"></i> Iniciar Atendimento
+        <div style="background-color: var(--bg-nude); padding: 40px; border-radius: 16px; border: 1px solid var(--border-soft); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.9rem; color: var(--accent-brown); margin-bottom: 14px;">Pronto para iniciar o acompanhamento?</h3>
+          <p style="color: var(--text-muted); margin-bottom: 28px; font-size: 0.98rem; max-width: 400px;">Entre em contato pelo WhatsApp para tirar dúvidas e definir juntos o formato de atendimento ideal (presencial ou teleconsulta).</p>
+          <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Jacqueline." target="_blank" class="btn-primary" style="padding: 16px 36px; font-size: 1rem;">
+            <i class="fa-brands fa-whatsapp"></i> Iniciar Conversa no WhatsApp
           </a>
         </div>
       </div>
@@ -633,7 +703,7 @@
         <a href="https://wa.me/5581996610333" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       <p style="margin-bottom: 8px;"><b>Dra. Jacqueline Lopes Fagundes</b> — Médica Geriatra (CRM PE 34165 | RQE 17158)</p>
-      <p style="color: #9E9085; font-size: 0.8rem;">Rua Pacífico dos Santos, 103 - Paissandu, Recife - PE | Tel: (81) 99661-0333</p>
+      <p style="color: #9E9085; font-size: 0.8rem;">Consultório: Rua Pacífico dos Santos, 103 - Paissandu, Recife - PE | Tel: (81) 99661-0333</p>
       <p style="color: #6E625A; font-size: 0.75rem; margin-top: 16px;">© All rights reserved.</p>
     </div>
   </footer>
