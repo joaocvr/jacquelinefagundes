@@ -3,710 +3,672 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Jacqueline Fagundes | Médica Geriatra</title>
-  <meta name="description" content="Atendimento humanizado com foco em longevidade. Avaliação Geriátrica Ampla e Telemedicina Geriátrica com a Dra. Jacqueline Fagundes - Geriatra - Geriatria - Recife Pernambuco">
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
-  
-  <!-- Fonts -->
+  <title>Geriatra em Recife | Dra. Jacqueline Fagundes – consulta presencial e online</title>
+  <meta name="description" content="Consulta geriátrica em Recife para quem cuida de um idoso: avaliação completa, revisão de medicamentos e orientação clara para a família. Presencial ou por telemedicina. Dra. Jacqueline Fagundes, CRM-PE 34165, RQE 17158.">
+  <meta name="theme-color" content="#5C412F">
+  <link rel="canonical" href="https://jacquelinefagundes.com.br/">
+
+  <!-- Compartilhamento (WhatsApp, Instagram, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Dra. Jacqueline Fagundes | Geriatra em Recife">
+  <meta property="og:description" content="Cuidado com calma e clareza para quem acompanha um idoso. Consulta presencial em Recife ou por telemedicina.">
+  <meta property="og:url" content="https://jacquelinefagundes.com.br/">
+  <meta property="og:image" content="https://jacquelinefagundes.com.br/img/og.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%235C412F%22/><text x=%2250%22 y=%2271%22 font-size=%2262%22 text-anchor=%22middle%22 fill=%22%23F4E9DC%22 font-family=%22serif%22>J</text></svg>">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dra. Jacqueline Lopes Fagundes",
+    "medicalSpecialty": "Geriatric",
+    "description": "Médica geriatra e clínica médica em Recife, com consulta presencial e telemedicina.",
+    "url": "https://jacquelinefagundes.com.br/",
+    "image": "https://jacquelinefagundes.com.br/img/dra-jacqueline.jpg",
+    "telephone": "+55-81-99661-0333",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Pacífico dos Santos, 103 – Paissandu",
+      "addressLocality": "Recife",
+      "addressRegion": "PE",
+      "postalCode": "52010-030",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["https://www.instagram.com/jacqueline.geriatria/"]
+  }
+  </script>
 
   <style>
     :root {
-      --bg-nude: #F7F1EC;
-      --bg-card: #FAF6F2;
-      --accent-brown: #7C5A43;
-      --accent-brown-dark: #5C412F;
-      --text-dark: #2C2420;
-      --text-muted: #6E625A;
-      --border-soft: #E5DCD4;
-      --font-serif: 'Cormorant Garamond', serif;
-      --font-sans: 'Plus Jakarta Sans', sans-serif;
+      /* Paleta do site atual (index.html): nude, marrom e tons quentes */
+      --brown-dark: #5C412F;    /* títulos, botões escuros, seções escuras */
+      --brown: #7C5A43;         /* destaque principal */
+      --espresso: #241D1A;      /* rodapé */
+      --cream: #F7F1EC;         /* fundo da página (bg-nude) */
+      --card: #FAF6F2;          /* cartões (bg-card) */
+      --sand: #EFE5DB;         /* seções alternadas, um tom abaixo do fundo */
+      --sand-deep: #E5DCD4;    /* bordas (border-soft) */
+      --ink: #2C2420;
+      --ink-soft: #5E534B;     /* um pouco mais escuro que o #6E625A do site, para leitura confortável */
+      --tan: #E5CDB8;          /* destaque claro sobre fundo escuro */
+      --wa: #1B7F4B;           /* verde do WhatsApp, escurecido para contraste do texto branco */
+      --wa-dark: #14633A;
+      --radius: 20px;
+      --shadow: 0 10px 30px rgba(92, 65, 47, .12);
+      --font-sans: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      --font-serif: 'Fraunces', Georgia, serif;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
+    /* Tamanho do texto: o botão "A+" do topo troca entre 100% e 118% */
+    html { font-size: 106.25%; scroll-behavior: smooth; scroll-padding-top: 84px; }
+    html.text-large { font-size: 125%; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; animation: none !important; }
     }
 
     body {
-      background-color: var(--bg-nude);
-      color: var(--text-dark);
+      background: var(--cream);
+      color: var(--ink);
       font-family: var(--font-sans);
-      line-height: 1.65;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Header & Navigation */
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+
+    :focus-visible { outline: 3px solid var(--brown); outline-offset: 3px; border-radius: 6px; }
+
+    .skip {
+      position: absolute; left: 12px; top: -60px; z-index: 2000;
+      background: var(--brown-dark); color: #fff; padding: 10px 18px; border-radius: 10px;
+      text-decoration: none; font-weight: 700;
+    }
+    .skip:focus { top: 12px; }
+
+    .container { width: min(1120px, 100% - 40px); margin: 0 auto; }
+    .section { padding: clamp(56px, 8vw, 96px) 0; }
+    .section.alt { background: var(--sand); }
+
+    h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; color: var(--brown-dark); line-height: 1.2; }
+    h2 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); margin-bottom: 14px; letter-spacing: -.01em; }
+    h3 { font-size: 1.3rem; margin-bottom: 8px; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--brown); margin-bottom: 14px;
+    }
+    .lead { font-size: 1.15rem; color: var(--ink-soft); max-width: 62ch; }
+    .section-head { max-width: 720px; margin-bottom: 44px; }
+
+    .icon { width: 1.35em; height: 1.35em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+    .icon.fill { fill: currentColor; stroke: none; }
+
+    /* Botões */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+      min-height: 56px; padding: 14px 30px; border-radius: 999px;
+      font: 700 1.05rem var(--font-sans); text-decoration: none; cursor: pointer; border: 2px solid transparent;
+      transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-wa { background: var(--wa); color: #fff; box-shadow: 0 8px 22px rgba(27, 127, 75, .28); }
+    .btn-wa:hover { background: var(--wa-dark); }
+    .btn-ghost { border-color: var(--brown-dark); color: var(--brown-dark); background: transparent; }
+    .btn-ghost:hover { background: var(--brown-dark); color: #fff; }
+    .btn-light { background: var(--card); color: var(--brown-dark); }
+    .btn-light:hover { background: var(--sand); }
+
+    /* Cabeçalho */
     header {
-      background-color: rgba(247, 241, 236, 0.92);
-      backdrop-filter: blur(12px);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid var(--border-soft);
-      padding: 16px 24px;
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(247, 241, 236, .94); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--sand-deep);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; }
+    .brand { text-decoration: none; line-height: 1.2; }
+    .brand strong { display: block; font-family: var(--font-serif); font-size: 1.25rem; color: var(--brown-dark); }
+    .brand span { font-size: .8rem; color: var(--ink-soft); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-links { display: flex; gap: 22px; margin-right: 8px; }
+    .nav-links a { text-decoration: none; font-weight: 700; color: var(--ink-soft); font-size: .95rem; }
+    .nav-links a:hover { color: var(--brown-dark); text-decoration: underline; text-underline-offset: 6px; }
+    .size-toggle {
+      min-height: 44px; min-width: 56px; padding: 0 14px; border-radius: 999px; cursor: pointer;
+      border: 2px solid var(--sand-deep); background: var(--card); color: var(--brown-dark);
+      font: 700 1rem var(--font-sans);
+    }
+    .size-toggle[aria-pressed="true"] { background: var(--brown-dark); color: #fff; border-color: var(--brown-dark); }
+    .nav .btn { min-height: 48px; padding: 10px 22px; font-size: .95rem; }
+    @media (max-width: 900px) { .nav-links { display: none; } }
+    @media (max-width: 560px) { .nav .btn { display: none; } .brand span { display: none; } }
+
+    /* Hero */
+    .hero { padding: clamp(40px, 6vw, 80px) 0 clamp(56px, 7vw, 96px); position: relative; overflow: hidden; }
+    .hero::before {
+      content: ""; position: absolute; inset: auto -10% -40% auto; width: 620px; height: 620px;
+      background: radial-gradient(circle, var(--sand) 0%, rgba(242, 233, 222, 0) 68%); z-index: 0;
+    }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+    .hero h1 { font-size: clamp(2.3rem, 5.6vw, 3.8rem); letter-spacing: -.015em; margin-bottom: 20px; }
+    .hero h1 em { font-style: italic; color: var(--brown); font-weight: 500; }
+    .hero .lead { margin-bottom: 30px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; }
+    .cta-note { font-size: .95rem; color: var(--ink-soft); display: flex; align-items: center; gap: 8px; }
+    .cta-note .icon { color: var(--wa); }
+
+    .trust { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px;
+      background: var(--card); border: 1px solid var(--sand-deep); font-size: .92rem; font-weight: 700; color: var(--brown-dark);
+    }
+    .chip .icon { color: var(--brown); width: 1.15em; height: 1.15em; }
+
+    .portrait { position: relative; justify-self: center; width: min(440px, 100%); }
+    .portrait-frame {
+      border-radius: 28px 28px 120px 28px; overflow: hidden; background: var(--brown-dark);
+      box-shadow: 0 24px 50px rgba(92, 65, 47, .28); aspect-ratio: 1 / 1.05;
+    }
+    .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+    .portrait-card {
+      position: absolute; left: -22px; bottom: -22px; max-width: 280px;
+      background: var(--card); border-radius: 16px; padding: 16px 20px; box-shadow: var(--shadow); border: 1px solid var(--sand-deep);
+    }
+    .portrait-card strong { display: block; font-family: var(--font-serif); color: var(--brown-dark); font-size: 1.1rem; line-height: 1.25; }
+    .portrait-card span { font-size: .88rem; color: var(--ink-soft); }
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .portrait { order: -1; width: min(340px, 86%); margin-bottom: 18px; }
+      .portrait-card { left: 50%; transform: translateX(-50%); bottom: -26px; width: max-content; max-width: 92%; text-align: center; }
+      .hero-text { padding-top: 14px; }
     }
 
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    /* Sinais (você se reconhece?) */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
+    .card {
+      background: var(--card); border: 1px solid var(--sand-deep); border-radius: var(--radius); padding: 28px 26px;
+      transition: transform .25s ease, box-shadow .25s ease;
     }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .card .badge-icon {
+      width: 52px; height: 52px; border-radius: 16px; background: var(--sand); color: var(--brown-dark);
+      display: grid; place-items: center; margin-bottom: 16px;
+    }
+    .card p { color: var(--ink-soft); font-size: 1rem; }
+    .notice {
+      margin-top: 28px; display: flex; gap: 14px; align-items: flex-start;
+      background: var(--card); border-left: 5px solid var(--brown); border-radius: 12px; padding: 18px 22px; color: var(--ink);
+    }
+    .notice .icon { color: var(--brown); margin-top: 3px; }
 
-    .brand-logo {
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      color: var(--text-dark);
+    /* Passos */
+    .steps { list-style: none; counter-reset: step; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+    .steps li { counter-increment: step; position: relative; background: var(--card); border-radius: var(--radius); padding: 30px 24px 26px; border: 1px solid var(--sand-deep); }
+    .steps li::before {
+      content: counter(step); position: absolute; top: -18px; left: 22px;
+      width: 40px; height: 40px; border-radius: 50%; background: var(--brown-dark); color: #fff;
+      display: grid; place-items: center; font: 600 1.15rem var(--font-serif);
     }
+    .steps h3 { font-size: 1.2rem; margin-top: 4px; }
+    .steps p { color: var(--ink-soft); font-size: 1rem; }
 
-    .brand-name {
-      font-family: var(--font-serif);
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: var(--accent-brown);
-      line-height: 1.1;
-    }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: start; }
+    @media (max-width: 820px) { .two-col { grid-template-columns: 1fr; } }
 
-    .brand-title {
-      font-size: 0.72rem;
-      letter-spacing: 2.5px;
-      color: var(--text-muted);
-      font-weight: 600;
-      text-transform: uppercase;
-    }
+    .checklist { list-style: none; display: grid; gap: 12px; margin-top: 8px; }
+    .checklist li { display: flex; gap: 14px; align-items: flex-start; background: var(--card); border: 1px solid var(--sand-deep); border-radius: 14px; padding: 14px 18px; }
+    .checklist .icon { color: var(--wa); margin-top: 3px; }
+    .panel { background: var(--card); border: 1px solid var(--sand-deep); border-radius: var(--radius); padding: 30px; }
+    .panel p + p { margin-top: 12px; }
+    .panel p { color: var(--ink-soft); }
 
-    .brand-subtitle {
-      font-size: 0.62rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-    
-    .nav-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background-color: var(--accent-brown);
-      color: #FFF;
-      padding: 10px 22px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(124, 90, 67, 0.15);
-    }
+    /* Sobre */
+    .about p { color: var(--ink-soft); margin-bottom: 14px; max-width: 60ch; }
+    .creds { list-style: none; margin-top: 22px; display: grid; gap: 12px; }
+    .creds li { display: flex; gap: 12px; align-items: flex-start; color: var(--ink); font-weight: 700; }
+    .creds .icon { color: var(--brown); margin-top: 3px; }
+    .creds small { display: block; font-weight: 400; color: var(--ink-soft); font-size: .92rem; }
+    .values { display: grid; gap: 16px; }
+    .value { background: var(--card); border-radius: 16px; padding: 20px 22px; border: 1px solid var(--sand-deep); display: flex; gap: 16px; align-items: flex-start; }
+    .value .icon { color: var(--brown-dark); margin-top: 4px; }
+    .value h3 { font-size: 1.15rem; margin-bottom: 2px; }
+    .value p { color: var(--ink-soft); font-size: .98rem; margin: 0; }
 
-    .nav-btn:hover {
-      background-color: var(--accent-brown-dark);
-      transform: translateY(-2px);
-    }
+    /* Telemedicina */
+    .tele { background: var(--brown-dark); color: #F1E8E0; }
+    .tele h2, .tele h3 { color: #fff; }
+    .tele .eyebrow { color: var(--tan); }
+    .tele .lead { color: #E3D6CB; }
+    .tele-list { list-style: none; display: grid; gap: 14px; margin: 24px 0 30px; }
+    .tele-list li { display: flex; gap: 14px; align-items: flex-start; }
+    .tele-list .icon { color: var(--tan); margin-top: 3px; }
+    .tele-box { background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .16); border-radius: var(--radius); padding: 30px; }
+    .tele-box p { color: #E3D6CB; }
 
-    /* Hero Section */
-    .hero {
-      padding: 90px 24px 70px;
-      max-width: 1100px;
-      margin: 0 auto;
-      text-align: center;
+    /* FAQ */
+    .faq { display: grid; gap: 12px; max-width: 820px; }
+    .faq details { background: var(--card); border: 1px solid var(--sand-deep); border-radius: 16px; }
+    .faq summary {
+      list-style: none; cursor: pointer; padding: 20px 24px; font-weight: 700; color: var(--brown-dark); font-size: 1.08rem;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 64px;
     }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; font-size: 1.6rem; line-height: 1; color: var(--brown); flex-shrink: 0; }
+    .faq details[open] summary::after { content: "–"; }
+    .faq details p { padding: 0 24px 22px; color: var(--ink-soft); max-width: 66ch; }
 
-    .badge {
-      display: inline-block;
-      background-color: rgba(124, 90, 67, 0.08);
-      color: var(--accent-brown);
-      padding: 6px 18px;
-      border-radius: 20px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-      border: 1px solid var(--border-soft);
-    }
+    /* Contato */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 28px; align-items: stretch; }
+    @media (max-width: 820px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-card { background: var(--card); border: 1px solid var(--sand-deep); border-radius: var(--radius); padding: 32px; display: grid; gap: 22px; align-content: start; }
+    .info { display: flex; gap: 16px; align-items: flex-start; }
+    .info .badge-icon { width: 46px; height: 46px; border-radius: 50%; background: var(--brown-dark); color: #fff; display: grid; place-items: center; flex-shrink: 0; }
+    .info h3 { font-size: 1.1rem; margin-bottom: 2px; }
+    .info p, .info a { color: var(--ink-soft); font-size: 1rem; }
+    .info a:hover { color: var(--brown-dark); }
+    .map { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--sand-deep); min-height: 340px; background: var(--sand); }
+    .map iframe { width: 100%; height: 100%; min-height: 340px; border: 0; display: block; }
 
-    .hero h1 {
-      font-family: var(--font-serif);
-      font-size: 3.3rem;
-      font-weight: 600;
-      line-height: 1.15;
-      color: var(--text-dark);
-      margin-bottom: 20px;
-    }
+    .final-cta { background: var(--brown-dark); color: #fff; text-align: center; padding: clamp(56px, 8vw, 88px) 0; }
+    .final-cta h2 { color: #fff; max-width: 20ch; margin: 0 auto 14px; }
+    .final-cta p { color: #E3D6CB; max-width: 54ch; margin: 0 auto 30px; font-size: 1.1rem; }
 
-    .hero h1 span {
-      color: var(--accent-brown);
-      font-style: italic;
-    }
+    footer { background: var(--espresso); color: #D3C7BE; padding: 40px 0 110px; font-size: .92rem; }
+    footer .container { display: grid; gap: 8px; text-align: center; }
+    footer strong { color: #fff; }
+    footer a { color: var(--tan); }
+    @media (min-width: 761px) { footer { padding-bottom: 40px; } }
 
-    .hero p {
-      font-size: 1.15rem;
-      color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto 36px;
-      font-weight: 400;
+    /* Barra fixa de WhatsApp no celular */
+    .sticky-cta {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 1500; display: none;
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(247, 241, 236, .96);
+      border-top: 1px solid var(--sand-deep); backdrop-filter: blur(8px);
     }
-
-    .cta-group {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background-color: var(--accent-brown);
-      color: #FFF;
-      padding: 16px 36px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 6px 20px rgba(124, 90, 67, 0.2);
-    }
-
-    .btn-primary:hover {
-      background-color: var(--accent-brown-dark);
-      transform: translateY(-2px);
-    }
-
-    /* About Section */
-    .about {
-      background-color: var(--bg-card);
-      padding: 85px 24px;
-      border-top: 1px solid var(--border-soft);
-      border-bottom: 1px solid var(--border-soft);
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 2.3rem; }
-    }
-
-    .section-title {
-      font-family: var(--font-serif);
-      font-size: 2.4rem;
-      color: var(--accent-brown);
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .about-text p {
-      color: var(--text-muted);
-      margin-bottom: 16px;
-      font-size: 1.05rem;
-    }
-
-    .credentials-box {
-      margin-top: 24px;
-      padding-top: 16px;
-      border-top: 2px solid var(--accent-brown);
-    }
-
-    .credentials-box p {
-      font-weight: 600;
-      color: var(--text-dark);
-      font-size: 0.95rem;
-      margin-bottom: 6px;
-    }
-
-    /* Values / Professional Traits */
-    .values-section {
-      padding: 75px 24px;
-      background-color: var(--bg-nude);
-    }
-
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-      margin-top: 40px;
-    }
-
-    .value-card {
-      background-color: var(--bg-card);
-      border: 1px solid var(--border-soft);
-      padding: 28px 24px;
-      border-radius: 16px;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    .value-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 20px rgba(124, 90, 67, 0.06);
-    }
-
-    .value-card i {
-      font-size: 1.6rem;
-      color: var(--accent-brown);
-      margin-bottom: 14px;
-    }
-
-    .value-card h4 {
-      font-size: 1.15rem;
-      color: var(--text-dark);
-      margin-bottom: 8px;
-      font-family: var(--font-serif);
-    }
-
-    .value-card p {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-    }
-
-    /* Services Section */
-    .services {
-      padding: 85px 24px;
-      background-color: var(--bg-card);
-    }
-
-    .section-header {
-      text-align: center;
-      max-width: 650px;
-      margin: 0 auto 50px;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-    }
-
-    .service-card {
-      background-color: var(--bg-nude);
-      border: 1px solid var(--border-soft);
-      border-radius: 16px;
-      padding: 36px 32px;
-      transition: all 0.3s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(124, 90, 67, 0.08);
-      border-color: var(--accent-brown);
-    }
-
-    .service-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      background-color: rgba(124, 90, 67, 0.1);
-      color: var(--accent-brown);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
-      margin-bottom: 20px;
-    }
-
-    .service-card h3 {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      color: var(--text-dark);
-      margin-bottom: 12px;
-    }
-
-    .service-card p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    /* Telemedicina Section */
-    .telemedicine {
-      background-color: var(--bg-nude);
-      padding: 85px 24px;
-      border-top: 1px solid var(--border-soft);
-    }
-
-    /* Location & Contact Section */
-    .contact-section {
-      background-color: var(--bg-card);
-      padding: 85px 24px;
-      border-top: 1px solid var(--border-soft);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: stretch;
-    }
-
-    @media (max-width: 768px) {
-      .contact-grid { grid-template-columns: 1fr; }
-    }
-
-    .contact-info-card {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      background-color: var(--bg-nude);
-      padding: 36px;
-      border-radius: 16px;
-      border: 1px solid var(--border-soft);
-    }
-
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-    }
-
-    .info-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background-color: var(--accent-brown);
-      color: #FFF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .info-text h4 {
-      font-size: 1.1rem;
-      color: var(--text-dark);
-      margin-bottom: 4px;
-    }
-
-    .info-text p, .info-text a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    .info-text a:hover {
-      color: var(--accent-brown);
-    }
-
-    .map-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 6px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--accent-brown);
-      text-decoration: none;
-    }
-
-    .map-btn:hover {
-      text-decoration: underline;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #241D1A;
-      color: #D3C7BE;
-      padding: 45px 24px;
-      text-align: center;
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--bg-nude);
-      text-decoration: none;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-
-    .social-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.08);
-      color: #FFF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .social-icon:hover {
-      background-color: var(--accent-brown);
-      transform: translateY(-2px);
-    }
+    .sticky-cta .btn { width: 100%; }
+    @media (max-width: 760px) { .sticky-cta { display: block; } }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Ícones (SVG embutido, sem biblioteca externa) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-.9.8c-.9-.4-1.7-1.2-2.1-2.1l.8-.9-1-2L9 9.5Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-pill" viewBox="0 0 24 24"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"/><path d="m8.5 8.5 7 7"/></symbol>
+      <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-video" viewBox="0 0 24 24"><path d="m16 13 5.2 3.5a.5.5 0 0 0 .8-.4V7.9a.5.5 0 0 0-.8-.4L16 11"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+      <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h8"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
   <header>
-    <div class="nav-container">
-      <a href="#" class="brand-logo">
-        <span class="brand-name">Dra. Jacqueline Fagundes</span>
-        <span class="brand-title">Médica Geriatra em Recife</span>
-        <span class="brand-subtitle">CRM-PE 34165 (RQE 17158)</span>
+    <div class="container nav">
+      <a href="#" class="brand" aria-label="Dra. Jacqueline Fagundes, página inicial">
+        <strong>Dra. Jacqueline Fagundes</strong>
+        <span>Geriatra (CRM-PE 34165 / RQE 17158)</span>
+        <br/>
+        <span>Atendimento presencial (Recife/PE) e online</span>
       </a>
-      <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20obter%20informações%20sobre%20as%20consultas%20(presencial%20ou%20telemedicina)." target="_blank" class="nav-btn">
-        <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
-      </a>
+      <nav class="nav-actions" aria-label="Principal">
+        <div class="nav-links">
+          <a href="#sinais">Quando procurar</a>
+          <a href="#consulta">A consulta</a>
+          <a href="#duvidas">Dúvidas</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <button class="size-toggle" id="size-toggle" type="button" aria-pressed="false" aria-label="Aumentar o tamanho do texto">A+</button>
+        <a class="btn btn-wa" href="https://wa.me/5581996610333?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Gostaria%20de%20agendar%20uma%20consulta%20de%20geriatria." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Agendar
+        </a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <span class="badge">Geriatra em Recife/PE e Telemedicina</span>
-    <h1>Atendimento geriátrico especializado em <span>Recife/PE</span> e consultas online por <span>Telemedicina</span>.</h1>
-    <p>Acompanhamento geriátrico e clínico focado na preservação da autonomia, segurança terapêutica e qualidade de vida. Atendimento humanizado presencial ou virtual.</p>
-    <div class="cta-group">
-      <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20conversar%20sobre%20o%20agendamento%20de%20uma%20consulta." target="_blank" class="btn-primary">
-        <i class="fa-brands fa-whatsapp"></i> Agendar Consulta via WhatsApp
-      </a>
-    </div>
-  </section>
+  <main id="conteudo">
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
-      <div class="about-grid">
-        <div>
-          <h2 class="section-title">Sobre a Dra. Jacqueline Fagundes</h2>
-          <div class="about-text">
-            <p>Formada em Medicina pela Universidade Federal de Campina Grande (UFCG), construí uma sólida base prática e acadêmica através de duas residências médicas especializadas: <b>Clínica Médica</b> e <b>Geriatria</b>.</p>
-            <p>Com anos de experiência dedicada à saúde do adulto e da pessoa idosa, atuando como <b>Geriatra em Recife - PE</b>, meu compromisso diário é exercer a medicina com rigor técnico, seriedade e dedicação. Acredito em um atendimento centrado na pessoa, pautado pela escuta atenta e empatia genuína.</p>
-            
-            <div class="credentials-box">
-              <p><i class="fa-solid fa-id-card" style="color: var(--accent-brown); margin-right: 8px;"></i> CRM PE 34165 | PB 11234</p>
-              <p><i class="fa-solid fa-certificate" style="color: var(--accent-brown); margin-right: 8px;"></i> RQE de Geriatria (17158) e Clínica Médica (14121)</p>
-            </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">Geriatria em Recife · presencial e online</span>
+          <h1>Você não precisa cuidar <em>sozinho</em> de quem você ama.</h1>
+          <p class="lead">Uma consulta geriátrica para entender como está a saúde, a memória e a rotina do seu familiar, e sair com orientações claras do que fazer a seguir. Com calma, escuta e tempo para as suas perguntas.</p>
+          <div class="cta-row">
+            <a class="btn btn-wa" href="https://wa.me/5581996610333?text=Quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Jacqueline%20Fagundes." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Agendar pelo WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="#consulta">Como funciona a consulta</a>
           </div>
+          <p class="cta-note"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Você escolhe o dia e o formato na própria conversa.</p>
+
+          <ul class="trust" aria-label="Credenciais">
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg> CRM-PE 34165 · RQE 17158</li>
+          </ul>
         </div>
-        <div style="background-color: var(--bg-nude); padding: 40px; border-radius: 20px; border: 1px solid var(--border-soft); text-align: center;">
-          <i class="fa-solid fa-user-doctor" style="font-size: 3rem; color: var(--accent-brown); margin-bottom: 20px;"></i>
-          <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 12px; color: var(--text-dark);">Segurança e Empatia</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">Pontualidade, ética inegociável e dedicação integral em cada consulta, garantindo o tempo necessário para um cuidado verdadeiramente humano.</p>
+
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <picture>
+              <source srcset="img/dra-jacqueline.webp" type="image/webp">
+              <img src="img/dra-jacqueline.jpg" width="800" height="797" alt="Retrato da Dra. Jacqueline Fagundes, médica geriatra, sorrindo" fetchpriority="high">
+            </picture>
+          </div>
+          <figcaption class="portrait-card">
+            <strong>Dra. Jacqueline Lopes Fagundes</strong>
+            <span>Médica Geriatra · Recife, PE</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SINAIS -->
+    <section class="section alt" id="sinais">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Quando procurar um geriatra</span>
+          <h2>Algo mudou, e você não sabe se é “coisa da idade”?</h2>
+          <p class="lead">Muitas famílias esperam por achar que é normal envelhecer assim. Nem sempre é. Estes são alguns sinais que merecem uma avaliação.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-history"/></svg></div>
+            <h3>Esquecimentos e confusão</h3>
+            <p>Repete as mesmas perguntas, se perde em lugares conhecidos ou esquece compromissos e remédios.</p>
+          </article>
+          <article class="card">
+            <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg></div>
+            <h3>Quedas ou medo de cair</h3>
+            <p>Tropeços frequentes, fraqueza nas pernas ou o hábito de evitar sair de casa por insegurança.</p>
+          </article>
+          <article class="card">
+            <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg></div>
+            <h3>Muitos remédios</h3>
+            <p>Vários médicos, várias receitas e dúvida se tudo isso ainda faz sentido junto.</p>
+          </article>
+          <article class="card">
+            <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></div>
+            <h3>Perda de peso ou de apetite</h3>
+            <p>Comendo menos, emagrecendo sem motivo claro ou com cansaço que não passa.</p>
+          </article>
+          <article class="card">
+            <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></div>
+            <h3>Humor e sono diferentes</h3>
+            <p>Tristeza, irritação, apatia, noites sem dormir ou agitação que não eram do jeito dele(a).</p>
+          </article>
+          <article class="card">
+            <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></div>
+            <h3>Cuidador sobrecarregado</h3>
+            <p>Se você está exausto e inseguro com as decisões, a consulta também é para você tirar dúvidas.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Values / Professional Traits -->
-  <section class="values-section">
-    <div class="container">
-      <div class="section-header" style="margin-bottom: 30px;">
-        <h2 class="section-title" style="font-size: 2rem;">Pilares do Atendimento</h2>
-        <p style="color: var(--text-muted);">Valores que norteiam cada consulta e a relação de confiança com o paciente.</p>
-      </div>
-      <div class="values-grid">
-        <div class="value-card">
-          <i class="fa-solid fa-clock"></i>
-          <h4>Pontualidade</h4>
-          <p>Respeito absoluto ao seu tempo e organização rigorosa da agenda.</p>
-        </div>
-        <div class="value-card">
-          <i class="fa-solid fa-hands-holding-child"></i>
-          <h4>Paciência e Escuta</h4>
-          <p>Atenção redobrada e ritmo adequado às necessidades de cada idoso.</p>
-        </div>
-        <div class="value-card">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <h4>Solidez Técnica</h4>
-          <p>Formação robusta em Clínica Médica aliada à especialização em Geriatria.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="services">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Avaliação Geriátrica Ampla e Áreas de Atuação</h2>
-        <p style="color: var(--text-muted);">Acompanhamento médico completo estruturado para preservar a funcionalidade e o bem-estar.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
-          <h3>Avaliação Geriátrica Ampla</h3>
-          <p>Check-up global detalhando aspectos físicos, cognitivos, funcionais e sociais para um plano de vida saudável.</p>
+    <!-- COMO FUNCIONA -->
+    <section class="section" id="consulta">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Da primeira mensagem ao plano de cuidado, sem complicação.</h2>
+          <p class="lead">Saber o que vai acontecer deixa tudo mais leve. Este é o caminho.</p>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
-          <h3>Saúde Cognitiva e Memória</h3>
-          <p>Prevenção, diagnóstico precoce e manejo especializado de quadros demenciais (como Alzheimer) e declínios de memória.</p>
-        </div>
+        <ol class="steps">
+          <li>
+            <h3>Você chama no WhatsApp</h3>
+            <p>Conte em poucas palavras o que está acontecendo. Você recebe os horários disponíveis e tira dúvidas sobre o formato.</p>
+          </li>
+          <li>
+            <h3>Escolhem o formato</h3>
+            <p>Consulta presencial no consultório, em Recife, ou por vídeo, se for mais fácil para o paciente ou para a família.</p>
+          </li>
+          <li>
+            <h3>A avaliação geriátrica ampla</h3>
+            <p>Um olhar completo sobre saúde física, memória, autonomia no dia a dia e rede de apoio, com revisão de todos os medicamentos.</p>
+          </li>
+          <li>
+            <h3>Orientações para a família</h3>
+            <p>Você sai sabendo o que foi encontrado, o que fazer agora, o que acompanhar e quando voltar.</p>
+          </li>
+        </ol>
 
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-pills"></i></div>
-          <h3>Manejo de Polifarmácia</h3>
-          <p>Revisão criteriosa de múltiplos medicamentos em uso para eliminar interações perigosas e simplificar o tratamento.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Telemedicina Section -->
-  <section class="telemedicine">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge" style="margin-bottom: 12px;">Consulta Online</span>
-        <h2 class="section-title">Telemedicina Geriátrica</h2>
-        <p style="color: var(--text-muted);">Acolhimento geriátrico e acompanhamento clínico com conforto, segurança e sigilo, disponível para pacientes que optam pelo formato virtual.</p>
-      </div>
-
-      <div class="about-grid" style="align-items: stretch;">
-        <!-- Card Explicativo -->
-        <div style="background-color: var(--bg-card); padding: 36px; border-radius: 16px; border: 1px solid var(--border-soft); display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="two-col" style="margin-top: 56px;">
           <div>
-            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--accent-brown); margin-bottom: 16px;">Como Funciona a Consulta Online?</h3>
-            <p style="color: var(--text-muted); margin-bottom: 16px; font-size: 0.95rem;">
-              A Telemedicina Geriátrica é uma excelente alternativa para o acompanhamento contínuo de quadros estáveis, alinhamentos com familiares/cuidadores e reavaliações de receitas e exames.
-            </p>
-            <ul style="list-style: none; padding: 0; color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
-              <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
-                <i class="fa-solid fa-lock" style="color: var(--accent-brown);"></i>
-                <span>Plataforma segura com prontuário eletrônico criptografado (LGPD).</span>
-              </li>
-              <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
-                <i class="fa-solid fa-file-prescription" style="color: var(--accent-brown);"></i>
-                <span>Receituários, atestados e pedidos de exames com assinatura digital válida em todo o Brasil.</span>
-              </li>
-              <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
-                <i class="fa-solid fa-users" style="color: var(--accent-brown);"></i>
-                <span>Possibilidade de participação simultânea de familiares ou cuidadores durante a videochamada.</span>
-              </li>
+            <h3 style="font-size: 1.6rem;">O que levar à consulta</h3>
+            <p class="lead" style="font-size: 1.05rem; margin-bottom: 16px;">Não se preocupe se faltar algo. Mas estes itens ajudam bastante:</p>
+            <ul class="checklist">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Todos os remédios em uso (as caixas ou uma foto das receitas)</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Exames e relatórios recentes, de qualquer especialista</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Quem convive com o paciente no dia a dia</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Suas perguntas e preocupações anotadas</li>
             </ul>
           </div>
-          <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20telemedicina." target="_blank" class="btn-primary" style="text-align: center; justify-content: center;">
-            <i class="fa-brands fa-whatsapp"></i> Tirar Dúvidas sobre Teleconsulta
+          <div class="panel">
+            <h3>Um cuidado que inclui você</h3>
+            <p>Quem acompanha o idoso conhece detalhes que ninguém mais vê. Na consulta, o seu relato é parte importante da avaliação.</p>
+            <p>O ritmo é adequado ao paciente: sem pressa, com linguagem simples e com espaço para o que a família quiser perguntar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section alt about" id="sobre">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">Quem vai cuidar do seu familiar</span>
+          <h2>Dra. Jacqueline Fagundes</h2>
+          <p>Sou formada em Medicina pela Universidade Federal de Campina Grande (UFCG) e fiz duas residências médicas: <strong>Clínica Médica</strong> e <strong>Geriatria</strong>.</p>
+          <p>Atuo como geriatra em Recife com um compromisso simples: exercer a medicina com rigor técnico, seriedade e dedicação, num atendimento centrado na pessoa, com escuta atenta e respeito ao tempo de cada paciente.</p>
+
+          <ul class="creds">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>CRM-PE 34165 · CRM-PB 11234</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>RQE Geriatria 17158 <small>RQE Clínica Médica 14121</small></span></li>
+          </ul>
+        </div>
+
+        <div class="values">
+          <div class="value">
+            <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+            <div><h3>Escuta e paciência</h3><p>Atenção redobrada e ritmo adequado às necessidades de cada idoso.</p></div>
+          </div>
+          <div class="value">
+            <svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>
+            <div><h3>Solidez técnica</h3><p>Formação robusta em Clínica Médica aliada à especialização em Geriatria.</p></div>
+          </div>
+          <div class="value">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <div><h3>Pontualidade e ética</h3><p>Respeito ao seu tempo, à sua privacidade e às normas do Conselho Federal de Medicina.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELEMEDICINA -->
+    <section class="section tele" id="telemedicina">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg> Consulta online</span>
+          <h2>Telemedicina geriátrica, para quando vir ao consultório é difícil.</h2>
+          <p class="lead">Boa opção para acompanhar quadros estáveis, alinhar condutas com a família e rever receitas e exames, sem deslocar o paciente.</p>
+          <ul class="tele-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg> Familiares e cuidadores podem participar da videochamada, inclusive de outra cidade.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Receitas, atestados e pedidos de exames com assinatura digital.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Atendimento conforme a Resolução CFM nº 2.314/2022 e a LGPD.</li>
+          </ul>
+          <a class="btn btn-light" href="https://wa.me/5581996610333?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Gostaria%20de%20saber%20mais%20sobre%20a%20consulta%20por%20telemedicina." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Tirar dúvidas sobre a consulta online
           </a>
         </div>
+        <div class="tele-box">
+          <h3>Quando o presencial é melhor</h3>
+          <p>Se, durante a conversa, a doutora perceber que é necessário um exame físico, você será orientado a buscar atendimento presencial. A segurança do paciente vem primeiro.</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Indicativos de Adequação Ética e Técnica -->
-        <div style="display: flex; flex-direction: column; gap: 16px;">
-          <div class="value-card" style="text-align: left; padding: 20px; background-color: var(--bg-card);">
-            <i class="fa-solid fa-user-shield" style="font-size: 1.3rem; margin-bottom: 8px;"></i>
-            <h4 style="font-size: 1.05rem;">Segurança e Privacidade</h4>
-            <p style="font-size: 0.85rem;">Atendimento realizado em conformidade rigorosa com as diretrizes do CFM (Resolução CFM nº 2.314/2022) e proteção de dados.</p>
+    <!-- FAQ -->
+    <section class="section" id="duvidas">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>O que as famílias costumam perguntar.</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Meu pai/minha mãe não quer ir ao médico. E agora?</summary>
+            <p>É muito comum. Converse pelo WhatsApp antes de marcar: contar o contexto ajuda a pensar na melhor forma de abordar a consulta. Muitas vezes o primeiro passo é você ir ou participar por vídeo.</p>
+          </details>
+          <details>
+            <summary>Posso ir sozinho(a), sem o paciente?</summary>
+            <p>Depende do caso. Para um primeiro contato, o melhor é falar pelo WhatsApp e descrever a situação, para saber qual formato faz sentido.</p>
+          </details>
+          <details>
+            <summary>A consulta online serve para a primeira vez?</summary>
+            <p>Pode servir, dependendo da situação. Se for preciso exame físico, você será orientado a fazer o atendimento presencial.</p>
+          </details>
+          <details>
+            <summary>O que é a avaliação geriátrica ampla?</summary>
+            <p>É um check-up global que olha saúde física, memória e raciocínio, funcionalidade (o que a pessoa consegue fazer sozinha) e o contexto social, para orientar um cuidado sob medida.</p>
+          </details>
+          <details>
+            <summary>E se ele(a) toma muitos remédios?</summary>
+            <p>Revisar os medicamentos faz parte da consulta. O objetivo é evitar interações perigosas e simplificar o tratamento sempre que possível. Leve tudo o que ele(a) usa.</p>
+          </details>
+          <details>
+            <summary>Valores, convênios e reembolso?</summary>
+            <p>Pergunte pelo WhatsApp. Você recebe essas informações antes de decidir.</p>
+          </details>
+          <details>
+            <summary>Meus dados e os do paciente ficam seguros?</summary>
+            <p>O atendimento segue as normas do CFM e a LGPD. As informações são usadas para o cuidado e para o agendamento.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section alt" id="contato">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Onde e como falar</span>
+          <h2>Consultório no Paissandu, ou de onde você estiver.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="info">
+              <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></div>
+              <div>
+                <h3>Consultório presencial</h3>
+                <p>Rua Pacífico dos Santos, 103 – Paissandu<br>Recife – PE, CEP 52010-030</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Pac%C3%ADfico+dos+Santos+103+Paissandu+Recife+PE" target="_blank" rel="noopener">Abrir no Google Maps</a>
+              </div>
+            </div>
+            <div class="info">
+              <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></div>
+              <div>
+                <h3>Telemedicina</h3>
+                <p>Consulta por vídeo, de onde você estiver.</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></div>
+              <div>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/5581996610333" target="_blank" rel="noopener">(81) 99661-0333</a><br>Os horários disponíveis são enviados na conversa.</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-insta"/></svg></div>
+              <div>
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/jacqueline.geriatria/" target="_blank" rel="noopener">@jacqueline.geriatria</a></p>
+              </div>
+            </div>
           </div>
 
-          <div class="value-card" style="text-align: left; padding: 20px; background-color: var(--bg-card);">
-            <i class="fa-solid fa-house-medical" style="font-size: 1.3rem; margin-bottom: 8px;"></i>
-            <h4 style="font-size: 1.05rem;">Acompanhamento Familiar</h4>
-            <p style="font-size: 0.85rem;">Ideal para famílias com idosos que possuem restrições graves de mobilidade ou que residem em outras localidades.</p>
-          </div>
-
-          <div class="value-card" style="text-align: left; padding: 20px; background-color: var(--bg-card);">
-            <i class="fa-solid fa-notes-medical" style="font-size: 1.3rem; margin-bottom: 8px;"></i>
-            <h4 style="font-size: 1.05rem;">Triagem Responsável</h4>
-            <p style="font-size: 0.85rem;">Sempre que identificado em consulta a necessidade de exame físico presencial, o paciente será orientado a buscar atendimento físico.</p>
+          <div class="map">
+            <iframe title="Mapa do consultório da Dra. Jacqueline Fagundes, Rua Pacífico dos Santos, 103, Paissandu, Recife"
+              src="https://www.google.com/maps?q=Rua+Pac%C3%ADfico+dos+Santos+103+Paissandu+Recife+PE&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact / Location & Agendamento -->
-  <section class="contact-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Local de Atendimento e Canais de Contato</h2>
-        <p style="color: var(--text-muted);">Atendimento presencial em Recife ou por telemedicina. Fale com nossa equipe para definir a melhor opção para você.</p>
+    <section class="final-cta">
+      <div class="container">
+        <h2>Dê o primeiro passo hoje, com calma.</h2>
+        <p>Mande uma mensagem contando o que está acontecendo. Você recebe os horários e tira suas dúvidas antes de decidir.</p>
+        <a class="btn btn-wa" href="https://wa.me/5581996610333?text=Quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Jacqueline%20Fagundes." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Conversar pelo WhatsApp
+        </a>
       </div>
+    </section>
 
-      <div class="contact-grid">
-        <div class="contact-info-card">
-          <div class="info-item">
-            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="info-text">
-              <h4>Consultório Presencial (Recife - PE)</h4>
-              <p>Rua Pacífico dos Santos, 103 – Paissandu<br>Recife - PE, CEP: 52010-030</p>
-              <a href="https://maps.google.com/?q=Rua+Pacífico+dos+Santos,+103+-+Paissandu,+Recife+-+PE" target="_blank" class="map-btn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Como chegar (Google Maps)
-              </a>
-            </div>
-          </div>
+  </main>
 
-          <div class="info-item">
-            <div class="info-icon"><i class="fa-solid fa-laptop-medical"></i></div>
-            <div class="info-text">
-              <h4>Consultas Virtuais (Telemedicina)</h4>
-              <p>Atendimento online disponível para acompanhamento e orientações de onde você estiver.</p>
-            </div>
-          </div>
-
-        <div class="info-item">
-            <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
-            <div class="info-text">
-              <h4>Instagram</h4>
-              <p><a href="https://www.instagram.com/jacqueline.geriatria/" target="_blank">@jacqueline.geriatria</a></p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-            <div class="info-text">
-              <h4>WhatsApp Oficial</h4>
-              <p><a href="https://wa.me/5581996610333" target="_blank">(81) 99661-0333</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div style="background-color: var(--bg-nude); padding: 40px; border-radius: 16px; border: 1px solid var(--border-soft); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-          <h3 style="font-family: var(--font-serif); font-size: 1.9rem; color: var(--accent-brown); margin-bottom: 14px;">Pronto para iniciar o acompanhamento?</h3>
-          <p style="color: var(--text-muted); margin-bottom: 28px; font-size: 0.98rem; max-width: 400px;">Entre em contato pelo WhatsApp para tirar dúvidas e definir juntos o formato de atendimento ideal (presencial ou teleconsulta).</p>
-          <a href="https://wa.me/5581996610333?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Jacqueline." target="_blank" class="btn-primary" style="padding: 16px 36px; font-size: 1rem;">
-            <i class="fa-brands fa-whatsapp"></i> Iniciar Conversa no WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="social-links">
-        <a href="https://www.instagram.com/jacqueline.geriatria/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://wa.me/5581996610333" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-      <p style="margin-bottom: 8px;"><b>Dra. Jacqueline Lopes Fagundes</b> — Médica Geriatra (CRM PE 34165 | RQE 17158)</p>
-      <p style="color: #9E9085; font-size: 0.8rem;">Consultório: Rua Pacífico dos Santos, 103 - Paissandu, Recife - PE | Tel: (81) 99661-0333</p>
-      <p style="color: #6E625A; font-size: 0.75rem; margin-top: 16px;">© All rights reserved.</p>
+      <p><strong>Dra. Jacqueline Lopes Fagundes</strong> · Médica geriatra · CRM-PE 34165 · RQE 17158</p>
+      <p>Rua Pacífico dos Santos, 103 – Paissandu, Recife – PE · <a href="https://wa.me/5581996610333" target="_blank" rel="noopener">(81) 99661-0333</a></p>
+      <p>As informações deste site são educativas e não substituem a consulta médica. Em urgência, ligue 192 (SAMU).</p>
+      <p>© 2026 Dra. Jacqueline Lopes Fagundes. Todos os direitos reservados.</p>
     </div>
   </footer>
 
+  <div class="sticky-cta">
+    <a class="btn btn-wa" href="https://wa.me/5581996610333?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Gostaria%20de%20agendar%20uma%20consulta%20de%20geriatria." target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Agendar pelo WhatsApp
+    </a>
+  </div>
+
+  <script>
+    // Botão "A+": alterna o tamanho do texto e lembra a escolha neste aparelho.
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('size-toggle');
+      var key = 'text-large';
+      function apply(on) {
+        root.classList.toggle('text-large', on);
+        btn.setAttribute('aria-pressed', String(on));
+        btn.textContent = on ? 'A–' : 'A+';
+        btn.setAttribute('aria-label', on ? 'Diminuir o tamanho do texto' : 'Aumentar o tamanho do texto');
+      }
+      try { apply(localStorage.getItem(key) === '1'); } catch (e) { apply(false); }
+      btn.addEventListener('click', function () {
+        var on = !root.classList.contains('text-large');
+        apply(on);
+        try { localStorage.setItem(key, on ? '1' : '0'); } catch (e) {}
+      });
+    })();
+  </script>
 </body>
 </html>
